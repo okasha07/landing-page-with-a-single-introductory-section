@@ -1,0 +1,90 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Open sans";
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--Violet);
+}
+
+main {
+  padding: 1rem;
+  height: 100vh;
+}
+
+.logo {
+  width: 180px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.content {
+  padding-right: 150px;
+  color: whitesmoke;
+}
+
+.content p {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  padding: 10px 40px;
+  border-radius: 50px;
+  font-size: 1em;
+  color: var(--Violet);
+  box-shadow: 0 3px 4px var(--Violet);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+  box-shadow: 3px 3px 15px #00000091;
+}
+
+.social object,
+.social img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+  .content {
+    padding-right: 0;
+    text-align: center;
+  }
+  .container img {
+    margin: 3rem 0;
+  }
+  .content p {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 0 19px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
